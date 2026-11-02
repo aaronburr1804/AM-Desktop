@@ -1,3 +1,14 @@
+set -g __fish_git_prompt_showdirtystate 1        # * for unstaged, + for staged changes
+set -g __fish_git_prompt_showuntrackedfiles 1    # % for untracked files
+set -g __fish_git_prompt_showupstream auto       # ↑ ahead / ↓ behind the remote
+set -g __fish_git_prompt_showstashstate 1        # $ if you have stashed changes
+set -g __fish_git_prompt_color_branch d4a640            # brass
+set -g __fish_git_prompt_color_dirtystate f0483b        # alarm red
+set -g __fish_git_prompt_color_stagedstate 5cc96b       # cogitator green
+set -g __fish_git_prompt_color_untrackedfiles e0a526    # amber
+set -g __fish_git_prompt_color_upstream eadfc4          # bone
+
+
 function fish_prompt
     set -l last_status $status
     set -l cog_color d4a640          # brass
