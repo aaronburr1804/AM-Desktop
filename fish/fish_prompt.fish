@@ -6,6 +6,7 @@ function fish_prompt
     set_color eadfc4
     echo -n (prompt_pwd)
     set_color normal
+    echo -n (fish_vcs_prompt)
     echo -n ' '
     set_color $cog_color
     echo -n '⚙︎ '
