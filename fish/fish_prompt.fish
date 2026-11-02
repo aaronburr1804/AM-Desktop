@@ -7,7 +7,12 @@ set -g __fish_git_prompt_color_dirtystate f0483b        # alarm red
 set -g __fish_git_prompt_color_stagedstate 5cc96b       # cogitator green
 set -g __fish_git_prompt_color_untrackedfiles e0a526    # amber
 set -g __fish_git_prompt_color_upstream eadfc4          # bone
-
+set -g __fish_git_prompt_char_upstream_ahead '↑'
+set -g __fish_git_prompt_char_upstream_behind '↓'
+set -g __fish_git_prompt_char_upstream_diverged '↕'
+set -g __fish_git_prompt_char_upstream_equal ''      # hide it when in sync
+set -g __fish_git_prompt_color_upstream_ahead 5cc96b
+set -g __fish_git_prompt_color_upstream_behind e0a526
 
 function fish_prompt
     set -l last_status $status
