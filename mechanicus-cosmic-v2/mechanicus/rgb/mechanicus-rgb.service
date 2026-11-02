@@ -1,0 +1,14 @@
+[Unit]
+Description=Adeptus Mechanicus RGB scheme (Razer keyboard + mouse)
+Requires=openrgb-server.service
+After=openrgb-server.service
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sleep 4
+# Static scheme. For the breathing effect add --pulse (the service then stays running).
+ExecStart=%h/.local/share/mechanicus-rgb/venv/bin/python %h/.local/share/mechanicus-rgb/mechanicus_rgb.py
+RemainAfterExit=yes
+
+[Install]
+WantedBy=graphical-session.target

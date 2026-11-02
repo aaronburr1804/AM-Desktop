@@ -1,0 +1,52 @@
+{
+  // Adeptus Mechanicus fastfetch — themed labels, plain-English meaning in brackets
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "file",
+    "source": "~/.config/fastfetch/mechanicus-logo.txt",
+    "padding": { "top": 1, "left": 2, "right": 3 },
+    "color": {
+      "1": "38;2;184;28;28",
+      "2": "38;2;110;86;40"
+    }
+  },
+  "display": {
+    "separator": "  ",
+    "color": {
+      "keys": "38;2;201;162;74",
+      "title": "38;2;214;60;44",
+      "separator": "38;2;120;120;120",
+      "output": "38;2;232;220;192"
+    },
+    "key": { "width": 24 }
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;201;162;74m\u2699\u001b[0m  \u001b[1;38;2;214;60;44mCOGITATOR DIAGNOSTIC\u001b[0m  \u001b[38;2;201;162;74m\u2699\u001b[0m"
+    },
+    "title",
+    { "type": "custom", "format": "\u001b[38;2;120;120;120m────────────────────────────────────────\u001b[0m" },
+    { "type": "os",       "key": "Forge World (OS)" },
+    { "type": "host",     "key": "Chassis (Host)" },
+    { "type": "kernel",   "key": "Machine Spirit (Kernel)" },
+    { "type": "uptime",   "key": "Vigil Kept (Uptime)" },
+    { "type": "packages", "key": "Sacred Tomes (Packages)" },
+    { "type": "shell",    "key": "Litany Reader (Shell)" },
+    { "type": "de",       "key": "Cogitator Shell (DE)" },
+    { "type": "wm",       "key": "Servo-Skull (WM)" },
+    { "type": "terminal", "key": "Vox-Caster (Terminal)" },
+    { "type": "custom", "format": "\u001b[38;2;120;120;120m────────────────────────────────────────\u001b[0m" },
+    { "type": "cpu",      "key": "Logic Engine (CPU)" },
+    { "type": "gpu",      "key": "Lumen Engine (GPU)" },
+    { "type": "memory",   "key": "Data-Core (RAM)" },
+    { "type": "disk",     "key": "Archive Vault (Disk)", "folders": "/" },
+    { "type": "display",  "key": "Occulus (Display)" },
+    "break",
+    {
+      "type": "custom",
+      "format": "\u001b[3;38;2;201;162;74m  From the weakness of the mind, Omnissiah save us.\u001b[0m"
+    },
+    "break"
+  ]
+}
