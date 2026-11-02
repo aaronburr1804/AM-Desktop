@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Mechanicus ASCII widget
+Exec=/usr/bin/python3 /home/ocelot/.local/share/mechanicus-ascii/ascii_flicker.py --x 0.35
+X-GNOME-Autostart-enabled=true
+NoDisplay=true

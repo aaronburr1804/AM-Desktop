@@ -310,7 +310,7 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--art")
     ap.add_argument("--monitor", default="0", help="monitor index or 'all'")
-    ap.add_argument("--x", type=float, default=0.76, help="art centre, fraction of width")
+    ap.add_argument("--x", type=float, default=0.35, help="art centre, fraction of width")
     ap.add_argument("--y", type=float, default=0.50, help="art centre, fraction of height")
     ap.add_argument("--scale", type=float, default=0.72, help="art height, fraction of screen height")
     ap.add_argument("--fps", type=int, default=12)
