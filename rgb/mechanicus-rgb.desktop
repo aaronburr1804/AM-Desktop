@@ -1,7 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=Mechanicus RGB
-Exec=$HOME/.local/share/mechanicus-rgb/start.sh
+Exec=/home/ocelot/.local/share/mechanicus-rgb/start.sh
 X-GNOME-Autostart-enabled=true
 NoDisplay=true
-EOF
